@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fee Calculator</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="assets/unilogo.png"
+          alt="University Logo"
+          height="100px"
+          width="100px"
+        />
+        <ul class="nav">
+          <li><a href="landing.html">Home</a></li>
+          <li><a href="reg.html">Register Here</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feecalc.html">Fee Calculator</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <form oninput="x.value = parseInt(participants.value)*parseInt(type.value)">
+            <label for="participants">Number of participants</label>
+            <input type="number" name="participants" id="participants" min="1" required> <br>
+            <label for="type">Type of event</label> <br>
+            <select name="type" id="type" required>
+                <option value="500">Workshop</option>
+                <option value="200">Seminar</option>
+                <option value="300">Conference</option>
+            </select>
+            <br>
+            <label for="x">Price : </label><output name="x" for="type number">
+            </output>
+        </form>
+    </main>
+    <!-- o Use <form> tag to create the fee calculator form. 
+        o Include the following form elements: 
+        ▪ Text input field for Number of Participants using <input 
+        type="number" min="1" required>. 
+        ▪ Dropdown list for selecting the type of event using <select required> 
+        and <option> tags (e.g., Workshop, Seminar, Conference). 
+        ▪ Use an <output> tag to display the calculated fee. 
+        ▪ Use the oninput attribute to dynamically calculate the fee based on 
+        the number of participants and the type of event.  -->
+  </body>
+</html>

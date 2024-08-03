@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+}
+body {
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
+  height: 100%;
+}
+main {
+  margin: auto;
+  font-size: 14px;
+}
+main {
+  width: 75%;
+  margin-top: 4%;
+  line-height: 35px;
+}
+nav,
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(188, 209, 249);
+}
+.nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
+  font-size: 16px;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font: 200;
+}
+a:hover {
+  font-weight: bolder;
+}
+footer {
+  align-items: center;
+  height: 30px;
+}

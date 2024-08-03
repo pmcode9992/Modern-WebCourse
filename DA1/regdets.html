@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Your response has been recorded!</h1>
+        <div id="details">
+            <p>Details</p>
+        </div>
+        <a href="landing.html"><button>Back</button></a>
+    </main>
+   
+</body>
+<script>
+    const searchParams = new URLSearchParams(window.location.search);
+    console.log(searchParams)
+    const detailsDiv = document.getElementById('details');
+    const mpp = {
+        "sname" : "Name",
+        "email" : "Email",
+        "phone" : "Phone Number",
+        "Department" : "Department",
+        "ptype" : "Participant Type",
+        "agree": "Agree to terms?"
+    }
+    searchParams.forEach((value, key) => {
+        const p = document.createElement('p');
+            p.textContent = `${mpp[key]}: ${value}`;
+            detailsDiv.appendChild(p);
+    });
+</script>
+</html>
