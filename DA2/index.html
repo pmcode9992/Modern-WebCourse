@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="head">
+      <h2>Music Festival Volunteer Form</h2>
+    </div>
+
+    <div id="popup"></div>
+
+    <div class="mainForm">
+      <form action="javascript:void(0)" onsubmit="onSubmit()">
+        <label for="vname">Name</label>
+        <input type="text" name="vname" id="vname" required />
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="number" name="phone" id="phone" required />
+
+        <label for="role">Preferred Role</label>
+        <ul>
+          <li>
+            <input type="radio" name="role" id="technical" checked /> Technical
+          </li>
+          <li><input type="radio" name="role" id="management" /> Management</li>
+          <li><input type="radio" name="role" id="creative" /> Creative</li>
+        </ul>
+        <label for="size"> T Shirt Size</label>
+        <ul>
+          <li>
+            <input type="radio" name="size" id="S" value="Small" checked />
+            Small
+          </li>
+          <li>
+            <input type="radio" name="size" id="M" value="Medium" /> Medium
+          </li>
+          <li><input type="radio" name="size" id="L" value="Large" /> Large</li>
+        </ul>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+      <div id="benefits"></div>
+    </div>
+
+    <!-- <div id="popup">HI</div> -->
+    <ul class="background">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
